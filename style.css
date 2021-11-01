@@ -1,15 +1,16 @@
 @font-face {
   font-family: 'Trebuchet MS';
   src: url('TrebuchetMS.eot');
-  src: local('Trebuchet MS'), local('TrebuchetMS'),
-      url('TrebuchetMS.eot?#iefix') format('embedded-opentype'),
-      url('TrebuchetMS.woff') format('woff'),
-      url('TrebuchetMS.ttf') format('truetype');
+  src: local('Trebuchet MS'), local('TrebuchetMS'), url('TrebuchetMS.eot?#iefix') format('embedded-opentype'), url('TrebuchetMS.woff') format('woff'), url('TrebuchetMS.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
-body {
+* {
+  transition: all .1s ease-in;
+}
+
+.wrapper {
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
@@ -17,12 +18,61 @@ body {
 }
 
 .head {
-  margin: 0 auto;
   text-align: center;
-  background: #4A4F56FF;
+  background: #4a4f56;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #EB7E7FFF;
-  font-family: 'Trebuchet MS' , Arial, sans-serif;
+  color: #eb7e7f;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
+.main {
+  background-color: #3b3f45;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+  font-size: 30px;
+  height: 50px;
+  width: 800px;
+}
+
+li:nth-child(even) {
+  background-color: #625e77;
+}
+
+li:nth-child(odd) {
+  background-color: #88839e;
+}
+
+input:checked+label {
+  text-decoration: line-through;
+  color: #A3A0B4;
+}
+
+label:hover {
+  padding-bottom: 15px;
+  border-style: solid;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+
+footer {
+  background-color: #3b3f45;
+}
+
+button {
+  padding: 40px 143px;
+  position: relative;
+  left: 50%;
+  transform: translate(-48%, 0);
+  background-color: #4A4F56FF;
+  color: #EB7E7FFF;
+  font-size: large;
+  border: 1px solid #4A4F56FF;
+}
