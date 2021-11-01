@@ -1,3 +1,10 @@
+2) Написать стили для CSS shopping list:
+
+Link to file
+
+
+И немного видео инструкций https://www.youtube.com/watch?v=bZmhSTrxRxw  
+
 В решении обязательно должны быть использованы селекторы:
 
 по элементу
