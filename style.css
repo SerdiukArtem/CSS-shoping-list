@@ -62,6 +62,11 @@ label:hover {
   border-bottom: 5px solid #fff;
 }
 
+span {
+  font-size: small ;
+  color: #c7c8cc;
+}
+
 footer {
   background-color: #3b3f45;
 }
